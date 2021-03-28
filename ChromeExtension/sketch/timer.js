@@ -1,5 +1,11 @@
+
+import {timeTxt, stopTimer, setTimer} from '../background.js';
+let resetBtn = document.getElementById('resetBtn');
+let setBtn = document.getElementById('setBtn');
+let sTime = document.getElementById('startTime');
+resetBtn.onclick = function() {stopTimer()};
+setBtn.onclick = function() {setTimer(sTime.value)};
 updateTimer();
-import {timeTxt} from '../background.js';
 function updateTimer() {
 	
 	console.log(timeTxt);
