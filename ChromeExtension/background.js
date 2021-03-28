@@ -1,9 +1,8 @@
 console.log('background go!');
 
-let min = 0, sec = 30;
-let time = min + ":" + sec;
+let min = 0, sec = 0;
+let time = "00:00";
 export {time as timeTxt, stopTimer, setTimer};
-startTimer();
 
 function startTimer() {
 	sec = sec - 1;
