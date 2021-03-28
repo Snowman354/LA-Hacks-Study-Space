@@ -2,7 +2,7 @@ console.log('background go!');
 
 let min = 0, sec = 30;
 let time = min + ":" + sec;
-export {time as timeTxt};
+export {time as timeTxt, stopTimer, setTimer};
 startTimer();
 
 function startTimer() {
@@ -11,10 +11,17 @@ function startTimer() {
 		min = min-1;
 		sec = 59;
 	}
-	if(min < 0) {
+	if(min == -1) {
 		min = 0;
 		sec = 0;
+		time = "00:00";
 		alert("time's up!");
+		return;
+	}
+	if(min < -1) {
+		min = 0;
+		sec = 0;
+		time = "00:00";
 		return;
 	}
 	let minTxt = min + "";
@@ -25,4 +32,15 @@ function startTimer() {
 	time = minTxt + ":" + secTxt;
 
 	setTimeout(startTimer, 1000);
+}
+function stopTimer() {
+	min = -2;
+	sec = 0;
+	time = "00:00";
+}
+function setTimer(mins) {
+	min = +mins;
+	sec = 0;
+	time = "00:00";
+	startTimer();
 }
