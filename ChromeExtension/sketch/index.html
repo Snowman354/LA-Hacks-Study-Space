@@ -43,8 +43,14 @@ body {
 	<script type="module" src="timer.js"></script>
 </head>
 <body>
-
-
+	<script>
+		window.onload = function () {
+		var quotes = ["Remember to turn on your camera!", "Don't be afraid to talk. I'm sure your peers would love to hear you!"]
+		var choice = Math.floor(Math.random() * 2)
+		var quote = quotes[choice]
+		document.getElementById('output').innerHTML = quote;
+		};
+	</script>
 <div class="row">
   <div class="column">
     <h2>Timer</h2>
@@ -90,9 +96,10 @@ body {
 </div>
 <div class="container">
 	  <img src="golden_gate.png" alt="Sunset" style="width:100%;">
-	  <div class="centered">Insert inspirational quote here...</div>
+	  <div class="centered"><p id="output"></p></div>
 	</div>
 </div>
 
 </body>
 </html>
+
