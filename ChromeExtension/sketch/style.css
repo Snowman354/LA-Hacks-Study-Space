@@ -1,18 +1,67 @@
 .audio-container {
-    text-align: right;
-    display: inline-block;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  text-align: right;
+  display: inline-block;
+  margin-top: 20px;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.audio-item {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 20px;
 }
 
-.audio-item {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 20px;
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: 'Rubik', sans-serif;
+  margin-top: -3px;
+}
+
+audio {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  min-width: 600px;
+  min-height: 600px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
