@@ -5,78 +5,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script type="module" src="timer.js"></script>
+    <script type="module" src="./modules/timer.js"></script>
   </head>
   <body>
-    <script type="text/javascript" src="quote.js"></script>
     <div class="row">
-        <h1 style="text-align:center">Pomodoro Timer</h1>
-        <h2 style="text-align:center;"> <span id="timer">00:00</span></h3>
+      <h1>Pomodoro Timer</h1>
+      <br></br>
+      <div align="center">
         <label for="startTime">Minutes:</label>
-        <input type="number" id="startTime" name="startTime">
-        <button type="setBtn" id="setBtn">Set</button>
-        <button type="resetBtn" id="resetBtn">Stop</button>
+        <input type="number" id="startTime" name="startTime" placeholder=0>
+        <button type="submit" id="setBtn">Start</button>
+        <button type="submit" id="stopAndResetBtn">Stop & Reset</button>
       </div>
-        <h1 style="text-align:center"> ASMR Sounds </h1>
-        <div class="audio-container">
-          <div class="audio-item">
-              <p>
-                  Pencil Writing
-              </p>
+      <h2 style="text-align:center;"> <span id="timer">00:00</span></h3>
+        <h1> ASMR Sounds </h1>
+        <div class="column">
+          <div class="audio-container">
+            <div class="audio-item">
+              <p>Pencil Writing</p>
               <audio controls loop>
-              <source src="Pencil Writing Scribble Sound Effect - Free Sound Stock.wav" type="audio/wav">
+              <source src="./sounds/Pencil Writing Scribble Sound Effect - Free Sound Stock.wav" type="audio/wav">
               </audio>
-          </div> 
-          <div class="audio-item">
-                  <p>
-                      Typing
-                  </p>
-                  <audio controls loop>
-                    <source src="Typing on Macbook Sound Effect 2.wav" type="audio/wav">
-                  </audio>
-          </div>
-            <div class="audio-container">
-              <div class="audio-item">
-                  <p>
-                      Pencil Writing
-                  </p>
-                  <audio controls loop>
-                  <source src="Pencil Writing Scribble Sound Effect - Free Sound Stock.wav" type="audio/wav">
-                  </audio>
-              </div> 
-              <div class="audio-item">
-                      <p>
-                          Typing
-                      </p>
-                      <audio controls loop>
-                        <source src="Typing on Macbook Sound Effect.wav" type="audio/wav">
-                      </audio>
-              </div>
-              <div class="audio-item">
-                      <p>
-                          Page Turning
-                      </p>
-                      <audio controls loop>
-                        <source src="Book Sound Effects - Free Sound Stock.wav" type="audio/wav">
-                      </audio>
-              </div>
-              <div class="audio-item">
-                <p>
-                    Rain
-                </p>
-                <audio controls loop>
-                  <source src="Inside Car Rain Sound Effect.wav" type="audio/wav">
-                </audio>
-              </div>
+            </div> 
+            <div class="audio-item">
+              <p>Typing</p>
+              <audio controls loop>
+                <source src="./sounds/Typing on Macbook Sound Effect.wav" type="audio/wav">
+              </audio>
             </div>
           </div>
         </div>
-        <div class="container">
-            <img src="golden_gate.png" alt="Sunset" style="width:100%;">
-            <div class="centered"><p id="output"></p></div>
+        <div class="column">
+          <div class="audio-container">
+            <div class="audio-item">
+              <p>Page Turning</p>
+              <audio controls loop>
+                <source src="./sounds/Book Sound Effects - Free Sound Stock.wav" type="audio/wav">
+              </audio>
+            </div>
+            <div class="audio-item">
+              <p>Rain</p>
+              <audio controls loop>
+                <source src="./sounds/Inside Car Rain Sound Effect.wav" type="audio/wav">
+              </audio>
+            </div>
+          </div>
         </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="./images/arches-utah-trail-5.jpg" alt="Horse">
+        <p class="centered" id="output1"></p>
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/GoldenGateBridge-001.jpg" alt="GoldenGateBridge">
+        <p class="centered" id="output2"></p>
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/Zugpsitze_mountain.jpg" alt="Mountain">
+        <p class="centered" id="output3"></p>
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/golden_gate.png" alt="Sunset">
+        <p class="centered" id="output4"></p>
       </div>
     </div>
+    <script type="text/javascript" src="./modules/slideshow.js"></script>
   </body>
 </html>
 
