@@ -1,5 +1,5 @@
 .audio-container {
-  text-align: right;
+  text-align: center;
   display: inline-block;
   margin-top: 20px;
   display: block;
@@ -16,15 +16,14 @@
   padding-top: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 25px;
   font-family: 'Rubik', sans-serif;
   margin-top: -3px;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
 }
 
 audio {
@@ -32,26 +31,22 @@ audio {
   display: inline-block;
 }
 
-* {
-  box-sizing: border-box;
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 body {
-  min-width: 600px;
+  min-width: 300px;
   min-height: 600px;
 }
 .column {
-  float: left;
+  float: center;
   width: 50%;
   padding: 10px;
   height: 250px;
 }
 
-.row:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 
 .container {
   position: relative;
