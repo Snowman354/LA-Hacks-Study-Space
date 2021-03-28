@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>study thing</title>
-  </head>
-  <body>
-    <h6 style="text-align:right;"> Links </h6>
-    
-    <h6 style="text-align:center;"> Pomodoro Timer</h6>
-    <h3 style="text-align:center;"> 00:00</h3>
-    <p>reset   work   break</p>
-  </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+</style>
+<style>
+	.container {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	}
+
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column">
+    <h2>Timer</h2>
+    <p>Insert timer here...</p>
+  </div>
+  <div class="column">
+    <h2>Links</h2>
+    <p>Insert links here...</p>
+  </div>
+</div>
+<div class="container">
+	  <img src="golden_gate.png" alt="Sunset" style="width:100%;">
+	  <div class="centered">Insert inspirational quote here...</div>
+	</div>
+</div>
+
+</body>
+</html>
 </html>
