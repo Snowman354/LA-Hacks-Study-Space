@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script type="module" src="timer.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script type="module" src="timer.js"></script>
   </head>
   <body>
-    <script>
-      window.onload = function () {
-      var quotes = ["Remember to turn on your camera!", "Don't be afraid to talk. I'm sure your peers would love to hear you!"]
-      var choice = Math.floor(Math.random() * 2)
-      var quote = quotes[choice]
-      document.getElementById('output').innerHTML = quote;
-      };
-    </script>
+    <script type="text/javascript" src="quote.js"></script>
     <div class="row">
       <div class="column">
         <h1>Timer</h1>
@@ -36,31 +30,52 @@
                       Typing
                   </p>
                   <audio controls loop>
-                    <source src="Typing on Macbook Sound Effect.wav" type="audio/wav">
+                    <source src="Typing on Macbook Sound Effect 2.wav" type="audio/wav">
                   </audio>
           </div>
-          <div class="audio-item">
+          <div class="column">
+            <h1> ASMR Sounds </h1>
+            <div class="audio-container">
+              <div class="audio-item">
                   <p>
-                      Page Turning
+                      Pencil Writing
                   </p>
                   <audio controls loop>
-                    <source src="Book Sound Effects - Free Sound Stock.wav" type="audio/wav">
+                  <source src="Pencil Writing Scribble Sound Effect - Free Sound Stock.wav" type="audio/wav">
                   </audio>
-          </div>
-          <div class="audio-item">
-            <p>
-                Rain
-            </p>
-            <audio controls loop>
-              <source src="Inside Car Rain Sound Effect.wav" type="audio/wav">
-            </audio>
+              </div> 
+              <div class="audio-item">
+                      <p>
+                          Typing
+                      </p>
+                      <audio controls loop>
+                        <source src="Typing on Macbook Sound Effect.wav" type="audio/wav">
+                      </audio>
+              </div>
+              <div class="audio-item">
+                      <p>
+                          Page Turning
+                      </p>
+                      <audio controls loop>
+                        <source src="Book Sound Effects - Free Sound Stock.wav" type="audio/wav">
+                      </audio>
+              </div>
+              <div class="audio-item">
+                <p>
+                    Rain
+                </p>
+                <audio controls loop>
+                  <source src="Inside Car Rain Sound Effect.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="container">
+            <img src="golden_gate.png" alt="Sunset" style="width:100%;">
+            <div class="centered"><p id="output"></p></div>
+        </div>
       </div>
-    </div>
-    <div class="container">
-        <img src="golden_gate.png" alt="Sunset" style="width:100%;">
-        <div class="centered"><p id="output"></p></div>
     </div>
   </body>
 </html>

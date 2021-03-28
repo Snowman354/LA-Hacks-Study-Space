@@ -16,14 +16,15 @@
   padding-top: 20px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 h1 {
   font-size: 25px;
   font-family: 'Rubik', sans-serif;
   margin-top: -3px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 audio {
@@ -31,9 +32,8 @@ audio {
   display: inline-block;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+* {
+  box-sizing: border-box;
 }
 
 body {
