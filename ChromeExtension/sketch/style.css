@@ -36,9 +36,12 @@ audio {
 }
 
 body {
-  min-width: 600px;
+  min-width: 800px;
   min-height: 600px;
+background-color: #fce043;
+background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
 }
+
 .column {
   text-align: center;
   float: left;
